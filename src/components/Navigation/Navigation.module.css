@@ -1,0 +1,26 @@
+.navigation {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li {
+    padding: 0 10px;
+    margin: 0;
+}
+
+.navLink {
+    text-decoration: none;
+}
+
+.navLink:hover {
+    text-decoration: underline;
+}
+
+.navLink.active {
+    font-weight: bold;
+    color: #2a2a2a;
+    text-decoration: underline;
+}

@@ -1,0 +1,10 @@
+.loadMore {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: blue;
+    color: #fff;
+}
