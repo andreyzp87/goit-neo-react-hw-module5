@@ -1,4 +1,4 @@
-import { ErrorMessage } from 'formik';
+import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
 import Loader from '../../components/Loader/Loader';
 import { Link, Outlet, useLocation, useParams } from 'react-router-dom';
 import { getMovieDetails } from '../../api/tmdb';
@@ -12,13 +12,7 @@ const MovieDetailsPage = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
   const location = useLocation();
-  const { from, query, page } = location.state || {};
-
-  const backLink = from
-    ? `${from}${
-        query || page ? '?' + new URLSearchParams({ query, page }) : ''
-      }`
-    : '/';
+  const backLink = location.state || { from: '/' };
 
   useEffect(() => {
     setIsLoading(true);

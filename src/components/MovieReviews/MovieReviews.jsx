@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useOutletContext } from 'react-router-dom';
 import { getMovieReviews } from '../../api/tmdb';
-import { ErrorMessage } from 'formik';
+import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
 import Loader from '../Loader/Loader';
 
 const MovieReviews = () => {
